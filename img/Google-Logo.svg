@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="34px" viewBox="0 0 32 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="62.1445196%" y1="4.96160367%" x2="24.1491386%" y2="71.9088461%" id="linearGradient-1">
+            <stop stop-color="#210E4A" offset="0%"></stop>
+            <stop stop-color="#00A1FF" offset="0.7%"></stop>
+            <stop stop-color="#00BEFF" offset="26%"></stop>
+            <stop stop-color="#00D2FF" offset="51.2%"></stop>
+            <stop stop-color="#00DFFF" offset="76%"></stop>
+            <stop stop-color="#00E3FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="107.581711%" y1="50.0116891%" x2="-130.487347%" y2="50.0116891%" id="linearGradient-2">
+            <stop stop-color="#FFE000" offset="0%"></stop>
+            <stop stop-color="#FFBD00" offset="40.9%"></stop>
+            <stop stop-color="#FFA500" offset="77.5%"></stop>
+            <stop stop-color="#FF9C00" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="86.237735%" y1="86.629655%" x2="-50.1295783%" y2="182.14819%" id="linearGradient-3">
+            <stop stop-color="#FF3A44" offset="0%"></stop>
+            <stop stop-color="#C31162" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-18.8030859%" y1="-60.1517892%" x2="42.0942252%" y2="-17.5103474%" id="linearGradient-4">
+            <stop stop-color="#32A071" offset="0%"></stop>
+            <stop stop-color="#2DA771" offset="6.9%"></stop>
+            <stop stop-color="#15CF74" offset="47.6%"></stop>
+            <stop stop-color="#06E775" offset="80.1%"></stop>
+            <stop stop-color="#00F076" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Monese_homepage" transform="translate(-222.000000, -1210.000000)" fill-rule="nonzero">
+            <g id="Group-31" transform="translate(164.000000, 905.000000)">
+                <g id="Group-5" transform="translate(0.000000, 47.987256)">
+                    <g id="Group-4" transform="translate(4.000000, 255.987256)">
+                        <g id="Group-3" transform="translate(54.642857, 1.928571)">
+                            <path d="M0.619649621,32.251897 C0.227149187,31.8602056 1.03028697e-13,31.2503771 1.03028697e-13,30.4606254 L1.03028697e-13,2.29069001 C1.03028697e-13,1.50093826 0.227149187,0.891109794 0.619649621,0.499418402 L0.716522068,0.413437365 L17.2750297,16.1925499 L17.2750297,16.5651344 L0.716522068,32.344247 L0.619649621,32.251897 Z" id="Shape" fill="url(#linearGradient-1)" transform="translate(8.637515, 16.378842) scale(-1, 1) rotate(-180.000000) translate(-8.637515, -16.378842) "></path>
+                            <path d="M22.7884082,10.930192 L17.2750297,16.1925499 L17.2750297,16.5651344 L22.795089,21.8274923 L22.9186849,21.759026 L29.4559049,18.2131043 C31.3215346,17.2068077 31.3215346,15.5508766 29.4559049,14.5382111 L22.9186849,10.9986584 L22.7884082,10.930192 L22.7884082,10.930192 Z" id="Shape" fill="url(#linearGradient-2)" transform="translate(24.065078, 16.378842) scale(-1, 1) rotate(-180.000000) translate(-24.065078, -16.378842) "></path>
+                            <path d="M22.9186849,27.3829174 L17.2750297,32.7631011 L0.619649621,16.8836774 C1.23929924,16.2627032 2.24977908,16.1878679 3.39888673,16.808842 L22.9186849,27.3829174" id="Shape" fill="url(#linearGradient-3)" transform="translate(11.769167, 24.570972) scale(-1, 1) rotate(-180.000000) translate(-11.769167, -24.570972) "></path>
+                            <path d="M22.9186849,5.38018379 L3.39888673,15.9542591 C2.24977908,16.5688643 1.23929924,16.494029 0.619649621,15.8730548 L17.2750297,-2.11386464e-13 L22.9186849,5.38018379 Z" id="Shape" fill="url(#linearGradient-4)" transform="translate(11.769167, 8.189421) scale(-1, 1) rotate(-180.000000) translate(-11.769167, -8.189421) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
