@@ -11,9 +11,139 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="icon" href="img/logo_main_3.png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+    <style type="text/css">
+      .wrimagecard{ 
+      margin-top: 0;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        position: relative;
+        background: #fff;
+        box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+      .wrimagecard .fa{
+        position: relative;
+          font-size: 70px;
+      }
+      .wrimagecard-topimage_header{
+      padding: 20px;
+      }
+      a.wrimagecard:hover, .wrimagecard-topimage:hover {
+          box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+      }
+      .wrimagecard-topimage a {
+          width: 100%;
+          height: 100%;
+          display: block;
+      }
+      .wrimagecard-topimage_title {
+          padding: 20px 24px;
+          height: 80px;
+          padding-bottom: 0.75rem;
+          position: relative;
+      }
+      .wrimagecard-topimage a {
+          border-bottom: none;
+          text-decoration: none;
+          color: #525c65;
+          transition: color 0.3s ease;
+      }
+
+
+      #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #myImg:hover {opacity: 0.7;}
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+      }
+
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+      /* Add Animation */
+      .modal-content, #caption {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+      }
+
+      @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+      }
+
+      /* The Close Button */
+      .close {
+        position: absolute;
+        /*top: 15px;*/
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* 100% Image Width on Smaller Screens */
+     /* @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+        }
+      }
+*/
+
+      </style>
 
 </head>
 <!--Start of Tawk.to Script-->
@@ -62,8 +192,45 @@ s0.parentNode.insertBefore(s1,s0);
                     </p>
                     <div class="d-flex justify-content-center">
                         <div class="px-2">
-                           <a href="#" data-toggle="modal" data-target="#videoModal" class="btn text-success bg-light btn-rounded" data-video="https://www.youtube.com/embed/HnwsG9a5riA" class="video"><i class="fa fa-play-circle fa-2x"></i></a>
+                           <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn text-success bg-light btn-rounded" data-video="https://www.youtube.com/embed/HnwsG9a5riA" class="video"><i class="fa fa-play-circle fa-2x"></i></a>
 
+                        </div>
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                     <img class="img-responsive" src="http://placehold.it/1200x600/555/000&text=One" alt="...">
+                                      <div class="carousel-caption">
+                                        One Image
+                                      </div>
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt="...">
+                                      <div class="carousel-caption">
+                                        Another Image
+                                      </div>
+                                    </div>
+                                     <div class="item">
+                                      <img class="img-responsive" src="http://placehold.it/1200x600/fcf00c/000&text=Three" alt="...">
+                                      <div class="carousel-caption">
+                                        Another Image
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                  <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                  <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
 
 
@@ -76,24 +243,99 @@ s0.parentNode.insertBefore(s1,s0);
 <!-- Tutorial -->
 <section id="tutorial" class="py-5 bg-light">
     
-    <div class="container">
-          <div class="row mb-3">
-              <div class="col-md-4">
-                  <h3 class="heading-tertiary">Tutorial</h3>
-                  <p class="paragraph-primary">
-                    Quickstart by sliding to next
-                  </p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-4">
+          <div class="wrimagecard wrimagecard-topimage">
+                  <a href="#" id="myImg">
+                  <div class="wrimagecard-topimage_header" style="background-color:  rgba(51, 105, 232, 0.1)">
+                    <center>
+                      <!-- <i class="fa fa-area-chart" style="color:#BB7824"></i> -->
+                      <img src="img/phone.png" alt="" class="col-lg-6 d-none d-lg-block wow zoomIn">
+                    </center>
+                  </div>
+                  <div class="wrimagecard-topimage_title">
+                    <h5>How to create an account on Uplus
+                  </div>
+                </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="wrimagecard wrimagecard-topimage">
+                  <a href="#" id="myImg2">
+                  <div class="wrimagecard-topimage_header" style="background-color:  rgba(96, 232, 51, 0.29)">
+                    <center>
+                      <!-- <i class="fa fa-area-chart" style="color:#BB7824"></i> -->
+                      <img src="img/crowd.svg" alt="" class="col-lg-6 d-none d-lg-block wow zoomIn" style="height: 105px;width: 400px;">
+                    </center>
+                  </div>
+                  <div class="wrimagecard-topimage_title">
+                    <h5>How to create group on Uplus
+                  </div>
+                </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="wrimagecard wrimagecard-topimage">
+              <a href="#" id="myImg3">
+              <div class="wrimagecard-topimage_header" style="background-color: rgba(22, 160, 133, 0.1)">
+                <center>
+                  <!-- <i class = "fa fa-cubes" style="color:#16A085"></i> -->
+                  <img src="img/idea.svg" alt="" class="col-lg-6 d-none d-lg-block wow zoomIn">
+                </center>
               </div>
+              <div class="wrimagecard-topimage_title">
+                <h5>How to make a contribution in group  
+                <div class="pull-right badge" id="WrControls"></div></h4>
+              </div>
+            </a>
           </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-4">
-
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="wrimagecard wrimagecard-topimage">
+              <a href="#" id="myImg4">
+              <div class="wrimagecard-topimage_header" style="background-color:  rgba(213, 15, 37, 0.1)">
+                <center>
+                  <!-- <i class="fa fa-pencil-square-o" style="color:#d50f25"> </i> -->
+                  <img src="img/atm.svg" alt="" class="col-lg-6 d-none d-lg-block wow zoomIn">
+                </center>
+              </div>
+              <div class="wrimagecard-topimage_title" >
+                <h5>Withdraw money from group using Uplus
+                <div class="pull-right badge" id="WrForms"></div>
+                </h4>
+              </div>
+              
+            </a>
           </div>
-          <div class="col-lg-6">
-            
-          </div>
-          </div>
+        </div>
     </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" src="img/account.jpg">
+    <div id="caption"></div>
+  </div>
+
+  <div id="myModal2" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" src="img/group.jpg">
+    <div id="caption2"></div>
+  </div>
+
+  <div id="myModal3" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" src="img/contribute.jpg">
+    <div id="caption3"></div>
+  </div>
+
+  <div id="myModal4" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" src="img/withdraw.jpg">
+    <div id="caption4"></div>
+  </div>
 
 </section>
 
@@ -193,9 +435,10 @@ s0.parentNode.insertBefore(s1,s0);
 </div>
 
 <script src="css/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="css/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 
 <script>
     $("#year").text(new Date().getFullYear());
@@ -208,19 +451,78 @@ s0.parentNode.insertBefore(s1,s0);
     });
 
     // Video Play
-    $(function () {
+    // $(function () {
       // Auto play modal video
-      $(".video").click(function () {
-        var theModal = $(this).data("target"),
-          videoSRC = $(this).attr("data-video"),
-          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-        $(theModal + ' iframe').attr('src', videoSRCauto);
-        $(theModal + ' button.close').click(function () {
-          $(theModal + ' iframe').attr('src', videoSRC);
-        });
-      });
-    });
+    //   $(".video").click(function () {
+    //     var theModal = $(this).data("target"),
+    //       videoSRC = $(this).attr("data-video"),
+    //       videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+    //     $(theModal + ' iframe').attr('src', videoSRCauto);
+    //     $(theModal + ' button.close').click(function () {
+    //       $(theModal + ' iframe').attr('src', videoSRC);
+    //     });
+    //   });
+    // });
 
+    
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
+var modal3 = document.getElementById("myModal3");
+var modal4 = document.getElementById("myModal4");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var img2 = document.getElementById("myImg2");
+var img3 = document.getElementById("myImg3");
+var img4 = document.getElementById("myImg4");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var captionText2 = document.getElementById("caption2");
+var captionText3 = document.getElementById("caption3");
+var captionText4 = document.getElementById("caption4");
+
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img2.onclick = function(){
+  modal2.style.display = "block";
+  modalImg.src = this.src;
+  captionText2.innerHTML = this.alt;
+}
+img3.onclick = function(){
+  modal3.style.display = "block";
+  modalImg.src = this.src;
+  captionText3.innerHTML = this.alt;
+}
+img4.onclick = function(){
+  modal4.style.display = "block";
+  modalImg.src = this.src;
+  captionText4.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[1];
+var span2 = document.getElementsByClassName("close")[2];
+var span3 = document.getElementsByClassName("close")[3];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+span1.onclick = function() {
+  modal2.style.display = "none";
+}
+span2.onclick = function() {
+  modal3.style.display = "none";
+}
+span3.onclick = function() {
+  modal4.style.display = "none";
+}
 </script>
 </body>
 </html>
